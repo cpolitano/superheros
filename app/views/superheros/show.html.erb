@@ -1,0 +1,13 @@
+<h1><%= link_to "Superheros!", superheros_path %></h1>
+
+<h2><%= @superhero.name %></h2>
+
+<%= image_tag @superhero.image, size: "500x400" %>
+
+<ul>
+<li>Superpower: <%= @superhero.super_power %></li>
+<li>Wears a cape?: <%= @superhero.cape %></li>
+</ul>
+
+<%= link_to "Edit superhero >", edit_superhero_path %><br>
+<%= link_to "Delete >", @superhero, :method => :delete %>
